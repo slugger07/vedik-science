@@ -1,0 +1,45 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+.DS_STORE
+spring.log*
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+##packing##
+**/target/*
+*.iws
+*.idea
+*.log
+*.log.*
+**/build/*
+.gradle/*
+*.DS_Store
+build/
+logs/
+pkg/*.deb
+*_all.deb
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+*/target/**
+
