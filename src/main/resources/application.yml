@@ -11,15 +11,9 @@ spring:
     timeout: 60000
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://stg-mysql-002.coifof6taait.ap-south-1.rds.amazonaws.com:3306/grow_all_stage?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://localhost:3306/grow_all_stage?useUnicode=true&characterEncoding=utf8
     username: root
-    password: Q3JT7sp3Yu6cLjX2
-    type: com.zaxxer.hikari.HikariDataSource
-    hikari:
-      idle-timeout: 10000
-      maximum-pool-size: 35
-      minimum-idle: 5
-      max-lifetime: 50000
+    password: root
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     database: MYSQL
@@ -30,5 +24,5 @@ spring:
       hibernate.jdbc.time_zone: Asia/Kolkata
     hibernate:
       naming-strategy: org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy
-      ddl-auto: update
+      ddl-auto: create
 
