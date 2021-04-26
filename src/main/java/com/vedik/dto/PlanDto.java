@@ -1,7 +1,7 @@
 package com.vedik.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.vedik.entity.Risk;
+import com.vedik.enums.PlanRisk;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -27,7 +27,7 @@ public class PlanDto {
     @Builder.Default
     private Long sipInvestmentRequiredPerMonth = 0L;
 
-    private Risk risk;
+    private PlanRisk planRisk;
 
     @Builder.Default
     List<SchemeDetailsDto> schemeDetailsDtoList = new ArrayList<>();

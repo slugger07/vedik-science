@@ -1,6 +1,7 @@
 package com.vedik.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.vedik.enums.GoalType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,5 +23,5 @@ public class GetPlanRequestDto {
 
     private Long targetAmount;
 
-    private PlanType planType;
+    private GoalType planType;
 }
